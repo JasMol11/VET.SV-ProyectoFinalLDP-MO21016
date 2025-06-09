@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar y ejecutar app",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "-std=c++17",
+        "-o", "app",
+        "src/main.cpp",
+        "src/entities/patient.cpp",
+        "src/entities/owner.cpp",
+        "src/entities/treatment.cpp",
+        "src/entities/appointment.cpp",
+        "src/managers/managePatients.cpp",
+        "src/managers/manageOwners.cpp",
+        "src/managers/manageTreatments.cpp",
+        "src/managers/manageAppointments.cpp",
+        "src/managers/manageReports.cpp",
+        "&&",
+        "./app"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Cargar datos de prueba",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "-std=c++17",
+        "-o", "loadData",
+        "src/tests/loadData.cpp",
+        "src/tests/testData.cpp",
+        "src/entities/patient.cpp",
+        "src/entities/owner.cpp",
+        "src/entities/treatment.cpp",
+        "src/entities/appointment.cpp",
+        "src/managers/managePatients.cpp",
+        "src/managers/manageOwners.cpp",
+        "src/managers/manageTreatments.cpp",
+        "src/managers/manageAppointments.cpp",
+        "src/managers/manageReports.cpp",
+        "&&",
+        "./loadData"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}
