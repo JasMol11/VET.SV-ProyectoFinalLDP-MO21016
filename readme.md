@@ -1,6 +1,6 @@
 # 🐾 VET.SV - Sistema de Gestión Clínica Veterinaria 🐾
 
-Este sistema fue desarrollado como parte del proyecto final de la asignatura **Diseño y Programación de Base de Datos**. Tiene como propósito modernizar la gestión de la clínica veterinaria **VET.SV**, permitiendo el control centralizado de pacientes (mascotas), sus dueños, tratamientos y citas médicas.
+Este sistema fue desarrollado como parte del proyecto final de la asignatura **Lógica de Progrmación**. Tiene como propósito modernizar la gestión de la clínica veterinaria **VET.SV**, permitiendo el control centralizado de pacientes (mascotas), sus dueños, tratamientos y citas médicas.
 
 ---
 
